@@ -1,10 +1,214 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8" />
-    <title>Page Title</title>
-</head>
+<html lang="ko">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Portfolio</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+        <link rel="stylesheet" href="./css/style.css">
+        
+        <style>
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            border: 0;
+        }
+        </style>
+        
+        <script src="https://use.fontawesome.com/926fe18a63.js"></script>
+        
+        <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+        <script>
+        $(function(){
+            $(".headC").click(function(){
+                $(".headB").slideToggle();
+            });
+        });
+        </script>
+    </head>
+
 <body>
-    Hello
+
+    <header class="head-color">
+        <div class="container">
+            <div class="container-small">
+                <a href="/index" class="headA">Portfolio</a>
+        
+                <button type="button" class="headC">
+                    <span class="fa fa-bars" title="MENU"></span>
+                </button>
+            </div>
+        
+            <nav class="headB">
+                <ul>
+                    <li><a href="/index">TOP</a></li>
+                    <li><a href="/list">콘텐츠</a></li>
+                    <!--<li><a href="/about">ABOUT</a></li> -->
+                    <li><a href="/contact">문의</a></li>
+                </ul>
+            </nav>
+        </div>
+</header>
+
+<section class="conA">
+<div class="container">
+	<!-- <img src="public/img/logo.svg" alt=""> -->
+	<h1>PORTFOLIO</h1>
+	<p>By JaeChan</p>
+	<a href="/code_editor">Start online code-editor</a>
+</div>
+</section>
+
+
+<section class="conB">
+<div class="container">
+	<div class="text">
+		<span class="fa fa-list-alt icon"></span>
+		<h2>PROJECTs</h2>
+		<p>개발 프로젝트 목록</p>
+		<a href="/list">MORE... 
+		<span class="fa fa-chevron-right"></span>
+		</a>
+	</div>
+
+	<div class="text">
+		<span class="fa fa-globe icon"></span>
+		<h2>Web Service</h2>
+		<p>온라인 코드에디터와 웹 채팅을 만나보세요!</p>
+		<a href="#">MORE... 
+		<span class="fa fa-chevron-right"></span>
+		</a>
+	</div>
+
+	<div class="text">
+		<span class="fa fa-edit icon"></span>
+		<h2>블로그 포스팅</h2>
+		<p>개발 기록 및 스터디 노트.</p>
+		<a href="#">MORE... 
+		<span class="fa fa-chevron-right"></span>
+		</a>
+	</div>
+</div>
+</section>
+
+
+
+<section class="conC">
+<div class="container">
+	<div class="photo"></div>
+	<div class="text">
+		<h2>인공지능 스마트 스피커 RaMi</h2>
+		<p>음성 명령을 통해 여러가지 서비스를 이용해 보세요.</p>
+		<a href="#">자세히 보기
+		<span class="fa fa-chevron-right"></span>
+		</a>
+	</div>
+</div>
+</section>
+
+
+<section class="conD">
+<div class="container">
+	<div class="photo"></div>
+	<div class="text">
+		<h2>Code Editor</h2>
+		<p>온라인에서 직접 코드를 작성하고 디버깅을 할 수 있습니다.</p>
+		<a href="#">자세히 보기
+		<span class="fa fa-chevron-right"></span>
+		</a>
+	</div>
+</div>
+</section>
+
+
+<footer>
+    <div class="container">
+        
+        <div class="footA">
+            <h2>Portfolio</h2>
+            <p>
+                <br>
+                <a href="https://ryujaechan.github.io/portfolio/">https://ryujaechan.github.io/portfolio/</a>
+            </p>
+        <!--
+                <nav class="footD">
+                    <ul>
+                        <li><a href="#">
+                            <span class="fa fa-twitter"
+                             title="Twitter"></span>
+                        </a></li>
+        
+                        <li><a href="#">
+                            <span class="fa fa-facebook"
+                             title="Facebook"></span>
+                        </a></li>
+        
+                        <li><a href="#">
+                            <span class="fa fa-google-plus"
+                             title="Google Plus"></span>
+                        </a></li>
+        
+                        <li><a href="#">
+                            <span class="fa fa-instagram"
+                             title="Instagram"></span>
+                        </a></li>
+        
+                        <li><a href="#">
+                            <span class="fa fa-youtube"
+                             title="YouTube"></span>
+                        </a></li>
+                    </ul>
+                </nav>
+            </div>
+        -->
+        <!--
+            <nav class="footB">
+                <div>
+                    <h3>ABOUT</h3>
+                    <ul>
+                        <li><a href="#">설립</a></li>
+                        <li><a href="#">주소</a></li>
+                        <li><a href="#">지도</a></li>
+                        <li><a href="#">스태프</a></li>
+                    </ul>
+                </div>
+        
+                <div>
+                    <h3>SUPPORT</h3>
+                    <ul>
+                        <li><a href="#">다운로드</a></li>
+                        <li><a href="#">매뉴얼</a></li>
+                        <li><a href="#">자주 묻는 질문</a></li>
+                        <li><a href="#">문의</a></li>
+                    </ul>
+                </div>
+        
+                <div>
+                    <h3>CONTENTS</h3>
+                    <ul>
+                        <li><a href="#">공지사항</a></li>
+                        <li><a href="#">비즈니스</a></li>
+                        <li><a href="#">프로필</a></li>
+                        <li><a href="#">개발자</a></li>
+                        <li><a href="#">블로그</a></li>
+                    </ul>
+                </div>
+        </nav>
+    -->
+        <div class="footC">
+            @Copyright (C) JaeChan. All rights reserved.
+        </div>
+        
+    </div>
+</footer>
+
 </body>
 </html>
+
+
